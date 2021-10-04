@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Form Container-->
+    <div class="form-container" id="form-container">
+      <h1>Sign Up Today!</h1>
+      <form id="form">
+        <!--Name of User-->
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="Name"
+          placeholder="Full Name"
+          minlength="3"
+          maxlength="100"
+          required
+        />
+        <!--Phone Number-->
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="text"
+          id="phoneNumber"
+          name="PhoneNumber"
+          placeholder="555-555-5555"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <!--Email ADDRESS-->
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="Email"
+          placeholder="example@mail.com"
+          required
+        />
+        <!--Website URL-->
+        <label for="url">Website URL</label>
+        <input
+          type="url"
+          id="url"
+          name="Url"
+          placeholder="https://expample.com"
+          required
+        />
+        <!--Password-->
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          placeholder="Password"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+          title="Please Enter atleast 8 character that must include a digit, a lowercase and a uppercase"
+          required
+        />
+        <!--Confirm Password-->
+        <label for="ConfirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="ConfirmPassword"
+          name="ConfirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <button type="submit" class="submit-form" id="submit-form">
+          Register
+        </button>
+      </form>
+      <div class="message-container" id="message-container">
+        <h4 class="message" id="message">Don't Hesitate In Registration!</h4>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
